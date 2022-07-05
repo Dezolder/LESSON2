@@ -2,8 +2,9 @@ import React from "react";
 
 const Counter = () => {
   const count = 0
+  const x = <h1>Empty</h1>
   const formatCount = () => {
-    return count === 0 ? 'emty' : count
+    return count === 0 ? x : count
   }
   return (
     <>
