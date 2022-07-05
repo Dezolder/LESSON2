@@ -2,14 +2,13 @@ import React from "react";
 
 const Counter = () => {
   const count = 0
-  const x = <h1>Empty</h1>
   const formatCount = () => {
-    return count === 0 ? x : count
+    return count === 0 ? 'emty' : count
   }
   return (
     <>
-      <span>{formatCount()}</span>
-      <button>+</button>
+      <span className="badge bg-primary m-2">{formatCount()}</span>
+      <button className="btn btn-primary btn-sm m-2">+</button>
     </>
   )
 };
